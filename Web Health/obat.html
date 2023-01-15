@@ -1,0 +1,579 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Health Web</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="stylesheet.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <!-- HEADER SELALU SAMA-->
+    <div class="menu_bar">
+        <div class="menu_logo">
+            <img src="./image/Logo.png" alt="logo">
+            <h1 class="logo"><b>Health</b><span id="logo_header"><b>Gaming.</b></span></h1>
+        </div>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li>
+                    <div class="dropdown">
+                        <button class="dropbtn">
+                            Category
+                          <i class="fa fa-caret-down"></i>
+                        </button>
+                        <div class="dropdown-content">
+                          <a href="dokter.html">Dokter</a>
+                          <a href="obat.html">Obat</a>
+                          <a href="faq.html">FAQ</a>
+                        </div>
+                      </div> 
+                </li>
+                <li><a href="#contact">Contact Us</a></li>
+        </ul>
+    </div>
+
+    <!-- CONTENT PASTI BERUBAH SETIAP PAGE -->
+    <div class="content_homepage">
+        <section >
+            <h3 class="sectionobattitle">P3K</h3>
+            <!-- <hr class="line"> -->
+            <div class="sectioncards">
+                    <div class="card">
+                    <img src="./image/hansaplast.jpeg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Hansaplast</h5>
+                        <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#obat_p3k_1">Read More</button>
+                    </div>
+                    </div>
+                    <div class="card">
+                    <img src="./image/rivanol.jpeg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Rivanol</h5>
+                        <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#obat_p3k_2">Read More</button>
+                    </div>
+                    </div>
+                    <div class="card">
+                    <img src="./image/betadine.jpeg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Betadine</h5>
+                        <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#obat_p3k_3">Read More</button>
+                    </div>
+                    </div>
+            </div>
+    <div>
+        <h3 class="sectionobattitle">Demam</h3>
+        <div class="sectioncards">
+                    <div class="card">
+                    <img src="./image/sianta.jpeg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Siantan</h5>
+                        <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#obat_demam_1">Read More</button>
+                    </div>
+                    </div>
+                    <div class="card">
+                    <img src="./image/coolfever.jpeg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Koolfever</h5>
+                        <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#obat_demam_2">Read More</button>
+                    </div>
+                    </div>
+                    <div class="card">
+                    <img src="./image/paracetakontol.jpeg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Paracetamol</h5>
+                        <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#obat_demam_3">Read More</button>
+                    </div>
+                    </div>
+
+        
+    </div>
+
+    <h3 class="sectionobattitle">Minyak Angin dan Balsam</h3>
+        <div class="sectioncards">
+                    <div class="card">
+                    <img src="./image/freshcare.jpeg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Freshcare</h5>
+                        <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#obat_angin_1">Read More</button>
+                    </div>
+                    </div>
+                    <div class="card">
+                    <img src="./image/capkapak.jpeg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Minyak Angin</h5>
+                        <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#obat_angin_2">Read More</button>
+                    </div>
+                    </div>
+                    <div class="card">
+                    <img src="./image/minyakkayuputih.jpeg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Minyak Kayu Putih</h5>
+                        <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#obat_angin_3">Read More</button>
+                    </div>
+                    </div>
+
+        
+    </div>
+
+    
+
+
+    <h3 class="sectionobattitle">Batuk dan Flu</h3>
+        <div class="sectioncards">
+                    <div class="card">
+                    <img src="./image/procoldFlu.jpeg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Procold</h5>
+                        <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#obat_flu_1">Read More</button>
+                    </div>
+                    </div>
+                    <div class="card">
+                    <img src="./image/paramex.jpeg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Paramex</h5>
+                        <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#obat_flu_2">Read More</button>
+                    </div>
+                    </div>
+                    <div class="card">
+                    <img src="./image/obhcombi.jpeg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">OBH Combi Plus </h5>
+                        <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#obat_flu_3">Read More</button>
+                    </div>
+                    </div>
+
+        
+    </div>
+
+       <h3 class="sectionobattitle">Antiseptik</h3>
+        <div class="sectioncards">
+                    <div class="card">
+                    <img src="./image/detol.jpeg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Dettol</h5>
+                        <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#obat_antiseptik_1">Read More</button>
+                    </div>
+                    </div>
+                    <div class="card">
+                    <img src="./image/listerine.jpeg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Listerine</h5>
+                        <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#obat_antiseptik_2">Read More</button>
+                    </div>
+                    </div>
+                    <div class="card">
+                    <img src="./image/hansaplast.jpeg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Hansaplast</h5>
+                        <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#obat_antiseptik_3">Read More</button>
+                    </div>
+                    </div>
+
+        
+    </div>
+            
+        </section>
+
+    </div>
+
+
+    <!-- FOOTER -->
+    <footer id="contact">
+        <div class="footer-content">
+            <div>
+                <h3>HEALTH GAMING</h3>
+                <p>don't put ur trust in someone just put it on us HealthGaming never let u down.</p>
+                <ul class="socials">
+                    <li><a href="#"><i class="fa-brands fa-facebook"></i></a><p>Health Gaming</p></li>
+                    <li><a href="#"><i class="fa-brands fa-twitter"></i></i></a><p>HealthGaming.id</p></li>
+                    <li><a href="#"><i class="fa-brands fa-tiktok"></i></a> <p>HealthGaming.id</p></li>
+                    <li><a href="#"><i class="fa-brands fa-instagram"></i></a><p>HealthGaming</p></li>
+                    <li><a href="#"><i class="fa-brands fa-whatsapp"></i></a><p>081378965421</p></li>
+                </ul>
+            </div>
+            <div>
+                <div class="form_card"><form><h4 class="title_form">Use the form below to drop us an email</h4><input name="name" type="text" class="inputField" placeholder="Full Name*" required=""><input name="email" type="email" class="inputField" placeholder="Email*" required=""><textarea name="message" class="inputField" placeholder="Message"></textarea><button class="bg-[#019EE2] hover:bg-[#2F5597] py-[20px] px-[40px] w-[200px] mx-auto text-white rounded-[30px]" type="submit">Send</button></form></div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+        <p>copyright &copy;2023 HealthGaming. desight by <span>HealthGamingIndonesia</span></p>
+    </div>
+    </footer>
+
+
+    <!-- MODAL -->
+    <div class="modal fade" id="obat_p3k_1" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="obat_p3k_1Label" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+        <div class="modal-header">
+            <h5 class="modal-title" id="obat_p3k_1Label">Hansaplast</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+                    <b>Hansaplast Antiseptik Pembersih Luka 40 ml</b><br>
+        Deskripsi:
+        HANSAPLAST SPRAY ANTISEPTIC merupakan antiseptik yang digunakan sebagai pembersih luka yang praktis dan modern.<br>
+        Aturan Pakai:
+        Semprotkan 10 cm di area luka infeksi. Ulangi bila perlu. Tepuk tepuk secara lembut di area yang telah kering.
+        </div>
+        <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        </div>
+        </div>
+    </div>
+    </div>
+
+    <div class="modal fade" id="obat_p3k_2" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="obat_p3k_1Label" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+        <div class="modal-header">
+            <h5 class="modal-title" id="obat_p3k_1Label">Rivanol</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+                    <b>Deskripsi:</b>
+            RIVANOL adalah cairan desinfektan yang di gunakan untuk membersihkan luka.<br>
+            <b>Aturan Pakai:</b>
+            Bubuhkan rivanol pada kapas, kemudian usapkan pada luka. bisa untuk membasuh luka
+        </div>
+        <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        </div>
+        </div>
+    </div>
+    </div>
+
+    <div class="modal fade" id="obat_p3k_3" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="obat_p3k_1Label" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+        <div class="modal-header">
+            <h5 class="modal-title" id="obat_p3k_1Label">Betadine</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+                    <b>BETADINE SOLUTION</b> mengandung zat aktif Povidone Iodine 10%. Betadine solution merupakan antiseptik pada luka untuk membunuh kuman penyebab infeksi<br>
+
+        <b>Aturan pakai :</b> Dapat digunakan beberapa kali dalam sehari dengan konsentrasi penuh baik untuk mengoles maupun kompres.
+        </div>
+        <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        </div>
+        </div>
+    </div>
+    </div>
+    
+    <div class="modal fade" id="obat_demam_1" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="obat_p3k_1Label" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+        <div class="modal-header">
+            <h5 class="modal-title" id="obat_p3k_1Label">Siantan</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+                   <b>Siantan Demam Typus 12 Tablet</b> <br>
+       <b>Deskripsi:</b> 
+        SIANTAN DEMAM TYPUS 12 TABLET merupakan suplemen herbal digunakan untuk mengobati demam tifus dan paratifus yang biasanya disebabkan oleh infeksi bakteri Salmonella sp.<br>
+        <b>Dosis:</b>
+        chevron-upDosis penggunaan Obat Cap Bunga SIANTAN Demam T : Balita : 3 x 1 Tablet / hari ( harus dilarutkan terlebidahulu kedalam air ) Anak-anak : 3 x 2 Tablet / hari Dewasa : 3 x 4 Tablet / hari Dapat juga dipergunakan sebagai suplemen untuk kesehatan ginjal ( Memperbaiki sirkulasi cairan dalam tubuh ) : Dewasa : 1 x 2 Tablet / hari. <br>
+        <b>Aturan pakai :</b>
+        Sesudah makan.
+        </div>
+        <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        </div>
+        </div>
+    </div>
+    </div>
+
+    <div class="modal fade" id="obat_demam_2" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="obat_p3k_1Label" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+        <div class="modal-header">
+            <h5 class="modal-title" id="obat_p3k_1Label">Koolfever</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+                   <b>Koolfever For Child 5 Sachet </b><br>
+
+        <b>Deskripsi:</b>
+        KOOLFEVER CHILD merupakan plester kompres yang digunakan untuk membantu menurunkan demam dan kompres pereda nyeri untuk anak-anak.<br>
+        <b>Dosis:</b>
+        Sesuai kebutuhan, dapat bertahan selama 6 jam.<br>
+        <b>Aturan Pakai:</b>
+        Buka pelapis plastik transparan kemudian tempelkan dengan erat permukaan yang mengandung gel pada kulit bersih dan kering. Ditempelkan pada dahi, pipi, atau punggung. Agar lebih efektif dan higienis, gunakan KOOLFEVER untuk satu kali penggunaan.
+        </div>
+        <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        </div>
+        </div>
+    </div>
+    </div>
+
+    <div class="modal fade" id="obat_demam_3" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="obat_p3k_1Label" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+        <div class="modal-header">
+            <h5 class="modal-title" id="obat_p3k_1Label">Paracetamol</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+                   <b>Paracetamol 500 mg 10 Kaplet</b><br>
+
+        <b>Deskripsi:</b>
+             PARACETAMOL TABLET merupakan obat yang dapat digunakan untuk meringankan rasa sakit pada sakit kepala, sakit gigi, dan menurunkan demam. Paracetamol bekerja pada pusat pengatur suhu di hipotalamus untuk menurunkan suhu tubuh (antipiretik) serta menghambat sintesis prostaglandin sehingga dapat mengurangi nyeri ringan sampai sedang (analgesik).<br>
+        <b>Dosis:</b>
+        PARACETAMOL TABLET merupakan obat yang dapat digunakan untuk meringankan rasa sakit pada sakit kepala, sakit gigi, dan menurunkan demam. Paracetamol bekerja pada pusat pengatur suhu di hipotalamus untuk menurunkan suhu tubuh (antipiretik) serta menghambat sintesis prostaglandin sehingga dapat mengurangi nyeri ringan sampai sedang (analgesik).<br>
+        <b>Aturan Pakai:</b>
+        Obat dapat diminum sebelum atau sesudah makan. 
+
+        </div>
+        <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        </div>
+        </div>
+    </div>
+    </div>
+
+    <div class="modal fade" id="obat_angin_1" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="obat_p3k_1Label" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+        <div class="modal-header">
+            <h5 class="modal-title" id="obat_p3k_1Label">Freshcare </h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+                   <b>Freshcare Roll On Minyak Angin Lavender</b><br>
+
+                <b>Deskripsi:</b>
+                FRESHCARE ROLL ON MINYAK ANGIN LAVENDER adalah minyak angin yang digunakan untuk meredakan perut kembung, pusing, masuk angin dan mabuk perjalanan. Produk ini mengandung olive oil sebagai anti iritasi bila dipakai berulang, Menthol dan camphor yang memberikan efek relaxasasi.<br>
+                <b>Aturan Pakai:</b>
+                Gosokkan secukupnya pada kening, dada, hidung, atau pada bagian yang sakit lainnya.
+
+        </div>
+        <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        </div>
+        </div>
+    </div>
+    </div>
+
+
+    <div class="modal fade" id="obat_angin_2" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="obat_p3k_1Label" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+        <div class="modal-header">
+            <h5 class="modal-title" id="obat_p3k_1Label">Minyak Angin</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+                   <b>Minyak Angin Cap Kapak 10 ml</b><br>
+
+        <b>Deskripsi:</b>
+        MINYAK ANGIN CAP KAPAK merupakan minyak angin yang digunakan untuk membantu meredakan sakit kepala, mabuk perjalanan, pilek, nyeri akibat encok, keseleo dan terkilir. <br>
+        <b>Aturan Pakai:</b>
+        Gosokkan secukupnya pada kening, dada, hidung, atau pada bagian yang sakit lainnya. 
+
+        </div>
+        <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        </div>
+        </div>
+    </div>
+    </div>
+
+    <div class="modal fade" id="obat_angin_3" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="obat_p3k_1Label" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+        <div class="modal-header">
+            <h5 class="modal-title" id="obat_p3k_1Label">Minyak Kayu Putih</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+                   <b>Cap Lang Minyak Kayu Putih 120 ml</b><br>
+<b>Deskripsi :</b>CAP LANG MINYAK KAYU PUTIH adalah minyak putih alami yang digunakan untuk membantu meringankan sakit perut, perut kembung, rasa mual, dan gatal-gatal akibat gigitan serangga/nyamuk.<br>
+<b>Aturan Pakai:</b>
+Gosokkan secukupnya pada bagian tubuh yang diinginkan. 
+
+
+        </div>
+        <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        </div>
+        </div>
+    </div>
+    </div>
+
+
+
+
+
+    <div class="modal fade" id="obat_flu_1" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="obat_p3k_1Label" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+        <div class="modal-header">
+            <h5 class="modal-title" id="obat_p3k_1Label">Procold</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+                   <b>Procold Flu dan Batuk 3 Strip (6 Kaplet/Strip) </b><br>
+
+                <b>Deskripsi:</b>
+                PROCOLD FLU DAN BATUK KAPLET mengandung Paracetamol, Dextromethorphan HBr, Pseudoefedrin HCl, digunakan untuk mengatasi gejala flu seperti demam, bersin-bersin, hidung tersumbat dan sakit kepala disertai batuk tidak berdahak.<br>
+                <b>Dosis:</b>
+                Dewasa dan anak >12 tahun : 3 x sehari 1 tablet, anak 6-12 tahun : 3 x sehari 1/2 tablet<br>
+                <b>Aturan Pakai:</b>
+                Berikan setelah makan. 
+
+        </div>
+        <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        </div>
+        </div>
+    </div>
+    </div>
+
+
+    <div class="modal fade" id="obat_flu_2" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="obat_p3k_1Label" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+        <div class="modal-header">
+            <h5 class="modal-title" id="obat_p3k_1Label">Paramex</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+                   <b>Paramex Flu & Batuk PE 4 Tablet</b><br>
+
+        <b>Deskripsi:</b>
+        Paramex Flu & Batuk PE merupakan obat untuk meringankan gejala flu seperti demam, sakit kepala, hidung tersumbat dan bersin-bersin yang disertai batuk kering atau tidak berdahak.<br>
+<b>Dosis:</b>
+Anak-anak 6-12 tahun : 3 x sehari 1/2 tablet. Dewasa : 3 kali sehari 1 tablet.<br>
+<b>Aturan Pakai:</b>
+Sesudah makan. 
+        </div>
+        <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        </div>
+        </div>
+    </div>
+    </div>
+
+    <div class="modal fade" id="obat_flu_3" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="obat_p3k_1Label" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+        <div class="modal-header">
+            <h5 class="modal-title" id="obat_p3k_1Label">OBH Combi Plus</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+                   <b>OBH Combi Plus Batuk Flu Menthol 100 ml</b><br>
+<b>Deskripsi :</b> OBH COMBI PLUS BATUK FLU merupakan obat batuk dengan kandungan OBH, Paracetamol, Ephedrine HCl, dan Chlorphenamine maleat yang digunakan untuk meredakan batuk disertai gejala-gejala flu seperti demam, sakit kepala, hidung tersumbat, dan bersin-bersin. OBH bekerja sebagai ekspektoran atau peluruh dahak, Paracetamol digunakan sebagai pereda demam dan sakit kepala, Chlorpheniramine maleate bekerja sebagai antihistamin atau anti alergi untuk meredakan gejala alergi, dan Ephedrine HCl sebagai dekongestan hidung atau melonggarkan saluran pernafasan.<br>
+<b>Dosis :</b> Dewasa dan anak diatas 12 tahun : 3 kali sehari, 3 sendok takar (15 ml).<br>
+<b>Aturan Pakai:</b>
+Dikonsumsi sesudah makan
+
+
+        </div>
+        <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        </div>
+        </div>
+    </div>
+    </div>
+
+
+        <div class="modal fade" id="obat_antiseptik_1" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="obat_p3k_1Label" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+        <div class="modal-header">
+            <h5 class="modal-title" id="obat_p3k_1Label">Dettol</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+                   <b>Dettol Antiseptik Cair 95 ml</b><br>
+
+                <b>Deskripsi:</b>
+                DETTOL ANTISEPTIK CAIR merupakan antiseptik cair yang digunakan sebagai perlindungan dari penyakit yang disebabkan kuman. Cairan ini juga dapat digunakan untuk mempercepat penyembuhan luka, lecet, gigitan, sengatan serangga, membunuh kuman pada pakaian kotor dan sebagai disinfektan pada peralatan rumah tangga.<br>
+                <b>Aturan Pakai:</b>
+                Pertolongan pertama pada luka, gigitan dan sengatan serangga : Larutkan 1 tutup penuh Dettol dengan 120 ml air. Tuangkan larutan Dettol pada kapas kemudian usapkan pada luka. Membunuh kuman pada seluruh tubuh: Larutkan 3-4 tutup penuh Dettol dalam bak mandi. Untuk bunuh kuman pada popok dan pakaian : Larutkan 1 tutup penuh Dettol dengan 240 ml air. *1 Tutup penuh = 6 ml 
+
+        </div>
+        <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        </div>
+        </div>
+    </div>
+    </div>
+
+
+    <div class="modal fade" id="obat_antiseptik_2" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="obat_p3k_1Label" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+        <div class="modal-header">
+            <h5 class="modal-title" id="obat_p3k_1Label">Listerine</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+                   <b>Listerine Cool Mint Mouthwash 500 ml</b><br>
+
+        <b>Deskripsi:</b>
+        LISTERINE COOL MINT MOUTHWASH merupakan Obat Kumur Antiseptik dengan rasa lebih kuat. Mampu mengurangi 99.9% kuman penyebab masalah mulut seperti bau mulut, plak dan masalah gusi, dengan rasa mint mulut ekstra bersih dan napas lebih segar hingga 12 jam di bandingkan hanya sikat gigi dan flossing saja. Mengandung 4 Essential Oil yaitu Eucalyptol, Menthol, Methyl Salicylate dan Thymol . Digunakan 2x sehari setelah meyikat gigi. Telah tersertifikasi HALAL oleh MUI.<br>
+        <b>Aturan Pakai:</b>
+        Berkumurlah dengan Listerine Cool Mint setelah menyikat gigi. Jangan ditelan.
+        </div>
+        <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        </div>
+        </div>
+    </div>
+    </div>
+
+    <div class="modal fade" id="obat_antiseptik_3" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="obat_p3k_1Label" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+        <div class="modal-header">
+            <h5 class="modal-title" id="obat_p3k_1Label">Hansaplast</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+                   <b>Hansaplast Antiseptik Pembersih Luka 40 ml</b><br>
+<b>Deskripsi :</b> HANSAPLAST SPRAY ANTISEPTIC merupakan antiseptik yang digunakan sebagai pembersih luka yang praktis dan modern.<br>
+<b>Aturan Pakai:</b>
+Semprotkan 10 cm di area luka infeksi. Ulangi bila perlu. Tepuk tepuk secara lembut di area yang telah kering.
+
+
+        </div>
+        <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        </div>
+        </div>
+    </div>
+    </div>
+
+    
+
+
+    <script>
+        // FUNCTION UNTUK CHANGE NAVBAR TRANSPARAN KETIKA SCROLL
+        let myNav = document.querySelector('.menu_bar');
+        const logoText = document.querySelector('#logo_header');
+        logoText.style.color = "white"
+        window.onscroll = function () { 
+            if (document.body.scrollTop >= 20 || document.documentElement.scrollTop >= 20  ) {
+                myNav.style.backgroundColor = 'white'
+                logoText.style.color = "#cacaca"
+            } 
+            else {
+                myNav.style.backgroundColor = 'transparent'
+                logoText.style.color = "white"
+            }
+        };
+    </script>
+</body>
+</html>

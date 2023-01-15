@@ -1,0 +1,488 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --light_blue: #82aae3;
+  --black: #000;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: sans-serif;
+}
+
+.menu_bar {
+  background-color: transparent;
+  height: 80px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  position: fixed;
+  top: 0;
+  transition: all 0.2s ease-in-out;
+  z-index: 10;
+}
+
+.menu_logo {
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.menu_logo img {
+  width: 60px;
+  height: 60px;
+  background-color: #fff;
+  -moz-border-radius: 70px;
+  -webkit-border-radius: 70px;
+  border-radius: 70px;
+}
+
+.menu_bar ul {
+  list-style: none;
+  display: flex;
+}
+
+.menu_bar ul li {
+  padding: 8px 30px;
+  position: relative;
+  cursor: pointer;
+}
+
+.menu_bar ul li:hover,
+.menu_bar li:hover .dropbtn {
+  background-color: var(--light_blue);
+  color: white;
+  border-radius: 2rem;
+}
+
+.menu_bar ul li:hover > a {
+  color: white;
+}
+
+.logo {
+  color: var(--light_blue);
+  font-family: sans-serif;
+  font-size: 30px;
+}
+
+/* 
+.menu_bar ul li select {
+    background-color: transparent;
+    border: none;
+    width: 100%;
+    height: 100%;
+    font-size: 16px;
+} */
+
+/* .menu_bar ul li select::selection{
+    border: none;
+    outline: none;
+} */
+
+.menu_bar ul li a {
+  color: var(--black);
+  text-decoration: none;
+  font-size: 20px;
+}
+
+.dropdown_menu {
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 100%;
+  background-color: black;
+}
+
+.dropdown_menu ul {
+  display: block;
+  margin: 10px;
+}
+
+/* dropdown from w3school */
+.dropdown {
+  position: relative;
+  cursor: pointer;
+}
+.dropdown .dropbtn {
+  font-size: 16px;
+  border: none;
+  outline: none;
+  color: black;
+  padding: 5px 0;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.navbar a:hover,
+.dropdown:hover {
+  background-color: var(--light_blue);
+}
+
+.dropdown-content {
+  display: none;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  align-items: justify;
+  position: absolute;
+  background-color: white;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  /* color: rgb(10, 10, 255); */
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  color: white;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: var(--light_blue);
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropbtn i {
+  transition: all 0.4s;
+  margin-left: 5px;
+}
+
+.dropdown:hover .dropbtn i {
+  transform: rotate(180deg);
+}
+
+/* CONTENT HOMEPAGE */
+.content_homepage {
+  background: url(./image/bg_loading.svg);
+  height: min-content;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100vw;
+  min-height: 100vh;
+
+  /* Full height */
+  /* height: 1400px; */
+  padding-top: 100px;
+  text-align: center;
+}
+
+/* banner */
+.banner,
+.sectiondoctor {
+  font-size: 1.5em;
+  color: var(--light_blue);
+  padding: 20px 30px;
+  text-align: left;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.banner img,
+.sectiondoctor img {
+  width: 750px;
+  height: 500px;
+}
+
+.sectiondoctor img {
+  width: 250px;
+  margin-left: 40px;
+}
+.sectiondoctor .contenttitle {
+  width: 75%;
+}
+
+.sectiondoctor p {
+  color: black;
+  margin-top: 10px;
+  text-align: justify;
+  line-height: 30px;
+  font-size: 0.8em;
+}
+
+.banner .desc {
+  color: black;
+  font-size: 0.8em;
+  margin-top: 0.5rem;
+  text-align: justify;
+}
+
+/* FOOTER CONTENT*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #fcfcfc;
+}
+
+footer {
+  background: #111;
+  height: auto;
+  width: 100vw;
+  font-family: "open-sans";
+  padding-top: 40px;
+  color: #fff;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+  text-align: left;
+}
+
+.footer-content h3 {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 1.8rem;
+  font-weight: 400;
+  text-transform: capitalize;
+  line-height: 3rem;
+}
+
+.footer-content p {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  max-width: none;
+  margin: 10px auto;
+  line-height: 28px;
+  font-size: 14px;
+}
+
+.footer-bottom {
+  text-align: center;
+  font-family: "Courier New", Courier, monospace;
+  padding-bottom: 24px;
+}
+
+.footer-content .form_card {
+  background: #fff;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  margin: 1rem 0;
+  padding: 10px 30px;
+  width: 100%;
+}
+
+.form_card form {
+  display: flex;
+  margin: 1.2rem 0;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.form_card .title_form {
+  color: #000;
+  font-size: 21px;
+  line-height: 30px;
+}
+
+.socials {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: start;
+  margin: 1rem 0 3rem 0;
+  gap: 16px;
+}
+
+.socials li {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+}
+.socials li p {
+  font-family: monospace;
+  font-size: 15 px;
+}
+
+.form_card .inputField {
+  --tw-border-opacity: 1;
+  border: 0;
+  border-bottom-width: 1px;
+  border-color: rgb(0 0 0 / var(--tw-border-opacity));
+  border-style: solid;
+  outline: 2px solid transparent;
+  outline-offset: 2px;
+  padding-bottom: 1.25rem;
+  padding-top: 1.25rem;
+  margin: 1rem 0;
+}
+
+.form_card button {
+  background: var(--light_blue);
+  border: 0;
+  padding: 20px 40px;
+  width: 200px;
+  margin: auto;
+  color: white;
+  border-radius: 30px;
+}
+
+/* CONTENT ABOUT */
+.titleabout {
+  font-size: 2em;
+  color: var(--light_blue);
+  padding: 20px;
+  text-align: center;
+  margin: 0 auto;
+  text-shadow: 2px 2px #666;
+}
+
+.aboutp {
+  color: black;
+  font-size: 1.25em;
+  padding: 20px;
+  text-align: justify;
+  margin: 0 auto;
+  line-height: 30px;
+  text-shadow: 2px 2px white;
+}
+/* CONTENT DOCTOR */
+* {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+/* .body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #82aae3;
+} */
+.container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 30px;
+  gap: 3rem 15px;
+}
+
+.container .card {
+  position: relative;
+  max-width: 350px;
+  height: 320px;
+  background: #fff;
+  margin: 20px 10px;
+  padding: 15px 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0.5px 20px rgba(0, 0, 0, 0.5);
+  transition: 0.3s ease-in-out;
+}
+
+.container .card .imgBx {
+  position: relative;
+  width: 260px;
+  height: 300px;
+  top: -60px;
+  left: 20px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+}
+
+.container .card:hover {
+  height: 460px;
+}
+
+.container .card .imgBx img {
+  width: 250px;
+  height: 300px;
+  border-radius: 4px;
+  object-fit: cover;
+  object-position: center;
+}
+
+.container .card .contentpic {
+  position: relative;
+  margin-top: -80px;
+  padding: 10px 15px;
+  text-align: center;
+  color: #111;
+  visibility: hidden;
+  opacity: 0;
+  transition: 0.3s ease-in-out;
+}
+.container .card:hover .contentpic {
+  visibility: visible;
+  opacity: 1;
+  margin-top: -20px;
+  transition-delay: 0.3s;
+}
+
+.titledoc {
+  font-size: 16px;
+}
+
+/* CONTENT OBAT */
+
+.sectionobat {
+  align-items: left;
+}
+.line {
+  margin-top: 0px;
+}
+.section_content_obat {
+  overflow: auto;
+}
+.sectioncards {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  margin: 0 auto;
+  gap: 1.5rem;
+  padding: 0 40px;
+}
+
+.sectionobattitle {
+  border-bottom: 2px solid #000;
+  margin: 20px 40px;
+}
+
+/* CONTENT FAQ */
+.faq_section {
+  padding: 40px 100px;
+}
+
+.accordion-button:not(.collapsed) {
+  color: black !important;
+  background: var(--light_blue);
+}
+
+/* ICON */
+.socials i {
+  font-size: 25px;
+  color: white;
+}
+
+.section__content {
+  padding: 40px 100px;
+  /* background-color: rgba(0, 0, 0, 0.5); */
+  opacity: 1;
+  text-align: center;
+}
